@@ -38,3 +38,6 @@ jobs:
         image-ref: flask-app
         format: table
         severity: CRITICAL,HIGH
+    - name: Echo GitHub Secret (Securely)
+      run: echo "Secret is ${{ secrets.FAKE_API_KEY }}"
+
